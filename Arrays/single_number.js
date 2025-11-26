@@ -17,5 +17,15 @@ function singleNumber(arr) {
   }
 }
 
-
 console.log(singleNumber(arr));
+
+// better approch
+function singleNumberBetterApproach(arr) {
+  let xor = 0;
+  for (let i = 0; i < arr.length; i++) {
+    xor = xor ^ arr[i];
+  }
+  return xor;
+}
+
+console.log(singleNumberBetterApproach(arr));
